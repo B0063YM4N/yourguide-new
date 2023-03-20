@@ -1,0 +1,156 @@
+#activities {
+  text-align: center;
+  padding-top: 50px;
+  height: 1000px;
+
+  h1 {
+    font-family: "Gloock", serif;
+    color: #055274;
+    margin-bottom: 30px;
+  }
+}
+
+.activities-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  .hexagonarea {
+    display: flex;
+
+    .hexagon {
+      position: relative;
+      width: 320px;
+      height: 320px;
+      margin: 0 5px;
+      clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+      background: deeppink;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      cursor: pointer;
+      transition: 0.5s;
+      overflow: hidden;
+    }
+
+    .hexagon:hover {
+      scale: 1.3;
+      z-index: 99;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 120%;
+      height: 100%;
+      transition: 0.5s;
+    }
+
+    img {
+      position: absolute;
+      scale: 0.5;
+    }
+
+    .skiing {
+      margin-top: -100px;
+      scale: 0.2;
+    }
+    .off-roading{
+      scale:0.2;
+    }
+
+    .zipline {
+      scale: 0.4;
+    }
+    .parachute {
+      scale: 0.5;
+    }
+
+    .horseriding {
+      scale: 0.3;
+    }
+    .shooting {
+      scale:0.4;
+    }
+    .cable{
+      scale:1;
+    }
+    .cycling{
+      scale:0.6
+    }
+
+   .large-p{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+   }
+
+
+
+
+
+
+
+
+    h3 {
+      z-index: 1;
+      position: absolute;
+      margin-top: 150px;
+      color: transparent;
+      -webkit-text-stroke: 1px white;
+      margin-bottom: 5px;
+      transition: 1.1s;
+    }
+
+    p {
+      z-index: 1;
+      color: white;
+      text-transform: uppercase;
+      transform: translateY(220px);
+      transition: 1s;
+    }
+    .fa-location-dot{
+      color:red;
+
+    }
+    .zipline-p {
+      padding-top: 30px;
+    }
+    .horseriding-p {
+      padding-top: 50px;
+    }
+    .board-p{
+      padding-top:70px;
+    }
+    .off-p{
+      padding:40px 10px 0 10px;
+
+    }
+  }
+
+  .hexagon:hover h3 {
+    transform: translateY(-90px);
+  }
+
+  .hexagon:hover p {
+    transform: translateY(60px);
+  }
+
+  .hexagonarea.second {
+    transform: translateY(-70px);
+  }
+  .hexagonarea.second:hover {
+    z-index: 1;
+  }
+  .hexagonarea.last {
+    transform: translateY(-140px);
+  }
+}
+.hexagon:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.58);
+}

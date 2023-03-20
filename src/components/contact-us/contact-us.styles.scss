@@ -1,0 +1,62 @@
+#contact-us {
+  width: 100%;
+  text-align: center;
+  background-color: #04293a;
+  color: white;
+  padding: 40px 0;
+  background-size: 50%;
+
+  h1 {
+    font-family: "Gloock", serif;
+  }
+}
+
+.contact-container {
+  height: 25vh;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0 20px 50px;
+
+  h4 {
+    font-family: "Gloock", serif;
+    margin-top: 20px;
+  }
+
+  h5 {
+    margin-top: 20px;
+  }
+
+  .contact-link-container {
+    width: 200px;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding-top: 5px;
+    transition:.5s;
+  }
+
+  .contact-link-container:hover {
+    background-color: #055274;
+  }
+
+  .contact-link {
+    color: white;
+    font-size: 18px;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  .fa-phone-volume {
+    font-size: 40px;
+  }
+
+  .fa-instagram {
+    font-size: 40px;
+  }
+
+  .fa-facebook {
+    font-size: 40px;
+  }
+}

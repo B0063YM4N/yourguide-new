@@ -1,0 +1,81 @@
+.navigation {
+  width: 80%;
+  height: 12vh;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  
+  
+
+  .logo {
+    transform: scale(1.5);
+    margin-top: 20px;
+    color: white;
+    align-items: center;
+  }
+
+  .logo-container {
+    height: 100%;
+    width: 100px;
+    overflow: hidden;
+  }
+
+  .nav-links-container {
+    padding-bottom: 20px;
+    padding: 40px 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  .nav-link {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    position: relative;
+  }
+
+  .nav-contact-container {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .fa-facebook {
+      font-size: 40px;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .fa-instagram {
+      font-size: 40px;
+      color: white;
+      transition: 0.3s;
+    }
+    .fa-instagram:hover {
+      scale: 1.1;
+    }
+     .fa-facebook:hover{
+      scale:1.1;
+     }
+  }
+
+  .nav-link::after {
+    content: "";
+    width: 0px;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    transition: 0.3s;
+  }
+
+  .nav-link:hover::after {
+    width: 50%;
+  }
+}

@@ -1,0 +1,79 @@
+#about-us{
+    width:100%;
+    height:70vh;
+   
+}
+
+.about-us-container{
+    width:100%;
+    height:100%;
+    background-color: #395B64;
+    display:flex;
+    justify-content: space-around;
+
+
+
+    .us-box{
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        align-items: center;
+
+
+        .us-description{
+            margin-top:20px;
+            width:calc(100%/2.5);
+            height:100%;
+            color:white;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            margin-left:100px;
+
+
+            .us-title{
+                margin:100px 0 30px 0;
+                font-family: 'Gloock', serif;
+            }
+            
+              
+        }
+
+
+       .us-img-container{
+        width:calc(100%/2.5);
+        height:100%;
+        margin:auto;
+        position: relative;
+        
+       }
+  
+       .us-img-container img{
+           width:100%;
+           position: absolute;
+           border-radius: 10px;
+           top:100px;
+           
+       }
+
+    }
+
+    .tour-description{
+        display: flex;
+        width:100%;
+        font-size: 17px;
+        color:white;
+        text-align: center;
+        justify-content: space-between;
+
+    }
+
+
+
+}
+
+
+
+
+
